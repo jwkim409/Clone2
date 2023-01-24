@@ -1,0 +1,62 @@
+@import "./global.css";
+
+.search-form{
+    margin: 15px;
+}
+.search-bar{
+    background-color: var(--darkpurple);
+    border-radius: 15px;
+    width: 100%;
+    height: 2rem;
+    margin-top: 30px;
+    color: white;
+    padding: 10px;
+    position: relative;
+}
+.search-bar:focus{   /*콜론 꼭 붙여쓰기*/
+    background-color: #594374;
+    transition: background-color 0.3s ease-in-out;
+}
+.search-form span{
+    position: absolute;
+    margin-top: 30px;
+    right: 25px;
+}
+
+
+.best-img{
+    width: 429px;
+    height: 302px;
+    border-radius: 20px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.text{
+    padding-left: 40px;
+}
+.subtext{
+    color: rgb(209, 200, 200);
+}
+
+.victory{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--purple)
+}
+
+.best-container span{
+    position: absolute; /*html에서 best-container에 relative 해둠*/
+    border-radius: 50%;
+    display: flex;
+    font-size: 5rem;
+    background-color: var(--purple);
+    left: calc(50% + 8rem); /*아이콘이 화면의 왼쪽으로부터 44% + 1.3rem만큼*/
+                              /*clac() 함수: 화면 크기가 바뀔 때 일정한 위치 유지*/
+    bottom: 0.9rem
+}
+
+.best-form{
+    margin: 20px;
+}
