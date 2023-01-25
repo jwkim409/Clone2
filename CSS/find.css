@@ -23,7 +23,6 @@
     right: 25px;
 }
 
-
 .best-img{
     width: 429px;
     height: 302px;
@@ -32,31 +31,71 @@
     justify-items: center;
     align-items: center;
 }
-
 .text{
     padding-left: 40px;
 }
 .subtext{
     color: rgb(209, 200, 200);
 }
-
 .victory{
     font-size: 2.5rem;
     font-weight: bolder;
     color: var(--purple)
 }
-
 .best-container span{
     position: absolute; /*html에서 best-container에 relative 해둠*/
     border-radius: 50%;
     display: flex;
     font-size: 5rem;
     background-color: var(--purple);
-    left: calc(50% + 8rem); /*아이콘이 화면의 왼쪽으로부터 44% + 1.3rem만큼*/
+    left: calc(50% + 8rem); /*아이콘이 화면의 왼쪽으로부터 50% + 8rem만큼*/
                               /*clac() 함수: 화면 크기가 바뀔 때 일정한 위치 유지*/
     bottom: 0.9rem
 }
-
 .best-form{
-    margin: 20px;
+    right: 10em
+}
+
+.recommend-title{
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+.recommend{
+   margin: 30px 0;
+   padding: 30px;
+}
+
+.recommend-img{
+    display: flex;
+    list-style: none;
+    overflow-x: auto;
+    margin-top: 30px;
+}
+
+.recommend-img li{
+    padding-right: 15px;
+}
+
+.recommend-img img{
+    width: 330px;
+    height: 470px;
+    border-radius: 30px;
+}
+
+.nav-bar{
+    background-color: rgba(73, 73, 73, 0.5);
+    width: 8rem;
+    height: 3rem;
+    border-radius: 0% 20% 0% 00%;
+    display: flex;
+    align-items: center; /*교차축 중앙에 배치*/
+    justify-content: space-around; /* 컨테이너 내 균등하게 분포 */
+    bottom: 0; /*화면 맨 아래, 아래로부터 0만큼 떨어짐*/
+    position: fixed;
+}
+.nav-bar span{
+    color: white;
+    font-size: 1.7rem;
+    bottom: 2rem;
 }
